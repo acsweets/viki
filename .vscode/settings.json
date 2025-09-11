@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "*.md": "markdown"
+  },
+  "markdown.preview.breaks": true,
+  "markdown.preview.linkify": true,
+  "emmet.includeLanguages": {
+    "vue": "html"
+  },
+  "terminal.integrated.defaultProfile.windows": "Command Prompt"
+}

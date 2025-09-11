@@ -1,0 +1,14 @@
+{
+  "name": "viki-blog",
+  "version": "1.0.0",
+  "description": "个人博客",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "gh-pages -d docs/.vuepress/dist"
+  },
+  "devDependencies": {
+    "vuepress": "^1.9.7",
+    "gh-pages": "^4.0.0"
+  }
+}

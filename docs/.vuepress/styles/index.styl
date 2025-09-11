@@ -1,0 +1,80 @@
+// 自定义样式
+:root
+  --primary-color: #1E2A38
+  --accent-color: #6C5CE7
+  --accent-gradient: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%)
+  --bg-color: #F9F9F9
+  --card-bg: #FFFFFF
+  --text-primary: #333333
+  --text-secondary: #666666
+  --growth-green: #00B894
+  --growth-orange: #FAB1A0
+  --border-radius: 12px
+
+// 全局字体
+body
+  font-family: 'Noto Serif SC', 'Quicksand', serif
+  background-color: var(--bg-color)
+  color: var(--text-primary)
+
+// 导航栏样式
+.navbar, .navbar-fixed
+  background: #000000 !important
+  backdrop-filter: blur(10px)
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1)
+  border-bottom: none !important
+  
+  .navbar-brand, .site-name
+    font-family: 'Quicksand', sans-serif
+    font-weight: 600
+    color: white !important
+    
+  .nav-links, .navbar-nav
+    background: transparent !important
+    
+    a, .nav-link
+      color: white !important
+      font-weight: 500
+      transition: all 0.3s ease
+      background: transparent !important
+      
+      &:hover, &.router-link-active, &.active
+        color: #A29BFE !important
+        background: transparent !important
+
+// 强制覆盖所有导航相关的白色背景
+.navbar *
+  background-color: transparent !important
+
+.navbar .navbar-brand,
+.navbar .nav-links,
+.navbar .nav-item,
+.navbar .dropdown-wrapper
+  background: transparent !important
+
+// 卡片样式
+.card
+  background: var(--card-bg)
+  border-radius: var(--border-radius)
+  padding: 1.5rem
+  margin: 1rem 0
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08)
+  transition: all 0.3s ease
+  
+  &:hover
+    transform: translateY(-4px)
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12)
+
+// 首页特殊样式
+.home
+  .hero
+    background: var(--accent-gradient)
+    color: white
+    
+    h1
+      font-family: 'Quicksand', sans-serif
+      font-weight: 700
+      
+    .description
+      font-size: 1.2rem
+      opacity: 0.9

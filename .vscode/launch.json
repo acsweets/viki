@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "启动博客开发服务器",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/.bin/vuepress.cmd",
+      "args": ["dev", "docs"],
+      "console": "integratedTerminal",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "skipFiles": ["<node_internals>/**"],
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/vuepress/cli.js"
+      }
+    }
+  ]
+}
