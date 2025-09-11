@@ -320,54 +320,7 @@ footer: MIT Licensed | Copyright © 2024 星星
 
 @keyframes float {
   0%, 100% { transform: translate(-50%, -50%) translateY(0px); }
-  50% { transform: translate(-50%, -50%) translateY(-8px); }
-}
-
-.identity-tags {
-  display: grid;
-  gap: 2rem;
-}
-
-.tag-group {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.tag-label {
-  font-weight: 600;
-  font-size: 1rem;
-  min-width: 120px;
-  opacity: 0.9;
-  display: flex;
-  align-items: center;
-}
-
-.tag-items {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  flex: 1;
-}
-
-.identity-tag {
-  background: rgba(255,255,255,0.15);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.2);
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.identity-tag:hover {
-  background: rgba(255,255,255,0.25);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(255,255,255,0.2);
+  50% { transform: translate(-50%, -50%) translateY(-10px); }
 }
 
 .scroll-indicator {
