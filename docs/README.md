@@ -31,9 +31,9 @@ footer: MIT Licensed | Copyright © 2024 星星
 </div>
 </div>
 <div class="personal-intro">
-<p>嗨，我是星星，一名热衷于跨端开发与持续学习的 Flutter 开发者。四年来深耕移动端技术，在探索中成长，在实践中创新。</p>
-<p>我精通 Flutter 框架与生态体系，具备 iOS / Android / Web / Pad / 车机等多终端开发经验。通过丰富的插件封装与三方库优化实践，能够快速解决业务痛点，提升性能与开发效率。</p>
-<p>在复杂业务场景方面，我主导开发过视频播放器、音频播放器、商城与库存系统、车辆流量管理系统等核心模块。在列表性能优化、多端适配、搜索交互、安全检测等方面积累了丰富的实战经验。</p>
+<p>嗨，我是星星，一名热衷于跨端开发与持续学习的 Flutter 开发者。在探索中成长，在实践中创新。</p>
+<p>我精通 Flutter 框架与生态体系，具备 iOS / Android / Web /macOS/ 车机等多终端开发经验。通过丰富的插件封装与三方库优化实践，能够快速解决业务痛点，提升性能与开发效率。</p>
+<p>在复杂业务场景方面，我主导开发过基于flutter官方插件封装视频播放器、商城与库存系统、车辆流量管理系统等核心模块。在多端适配、组件封装、插件维护开发、安全检测等方面积累了丰富的实战经验。</p>
 <p>技术上，我掌握 Flutter ↔ Web/Vue/JS 通信机制，能够实现跨框架交互与页面复用。熟悉 Android 原生开发、iOS 打包发布、Gradle 构建、混淆与安全加固，具备完整的产品交付能力。</p>
 <p>在工程化实践中，我熟悉 Git 分支管理、FVM 多版本切换、CI/CD 部署等流程。具备较强的产品理解力与用户体验意识，能将技术方案与业务目标紧密结合。</p>
 <p>我持续关注 Flutter 新特性、视频/音频流媒体方案、跨端框架演进，保持快速学习、主动探索和总结沉淀的习惯。除了技术，我也在通过「重拾学习内驱力」项目探索自己的学习内驱力与创造力，乐于分享与知识积累！</p>
@@ -155,53 +155,44 @@ MIT Licensed | Copyright © 2024 星星
 </section>
 </div>
 
-<ClientOnly>
 <script>
-export default {
-  mounted() {
-    this.initStatus();
-    this.bindEvents();
-  },
-  methods: {
-    initStatus() {
-      const savedStatus = localStorage.getItem('userStatus');
-      if (savedStatus) {
-        const badge = document.querySelector('.status-badge');
-        if (badge) {
-          badge.textContent = '今日状态：' + savedStatus;
-        }
-      }
-    },
-    bindEvents() {
-      document.addEventListener('click', (e) => {
-        if (e.target.dataset.action === 'toggle') {
-          const options = document.getElementById('statusOptions');
-          if (options) {
-            options.classList.toggle('show');
-          }
-        }
-        
-        if (e.target.dataset.status) {
-          const badge = document.querySelector('.status-badge');
-          if (badge) {
-            badge.textContent = '今日状态：' + e.target.dataset.status;
-            localStorage.setItem('userStatus', e.target.dataset.status);
-          }
-          const options = document.getElementById('statusOptions');
-          if (options) {
-            options.classList.remove('show');
-          }
-        }
-        
-        if (!e.target.closest('.status-section')) {
-          const options = document.getElementById('statusOptions');
-          if (options) {
-            options.classList.remove('show');
-          }
-        }
-      });
+setTimeout(function() {
+  // 加载保存的状态
+  const savedStatus = localStorage.getItem('userStatus');
+  if (savedStatus) {
+    const badge = document.querySelector('.status-badge');
+    if (badge) {
+      badge.textContent = '今日状态：' + savedStatus;
     }
   }
-}
+  
+  document.addEventListener('click', function(e) {
+    if (e.target.dataset.action === 'toggle') {
+      const options = document.getElementById('statusOptions');
+      if (options) {
+        options.classList.toggle('show');
+      }
+    }
+    
+    if (e.target.dataset.status) {
+      const badge = document.querySelector('.status-badge');
+      if (badge) {
+        badge.textContent = '今日状态：' + e.target.dataset.status;
+        // 保存状态到localStorage
+        localStorage.setItem('userStatus', e.target.dataset.status);
+      }
+      const options = document.getElementById('statusOptions');
+      if (options) {
+        options.classList.remove('show');
+      }
+    }
+    
+    if (!e.target.closest('.status-section')) {
+      const options = document.getElementById('statusOptions');
+      if (options) {
+        options.classList.remove('show');
+      }
+    }
+  });
+}, 1000);
 </script>
-</ClientOnly>
