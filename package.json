@@ -1,7 +1,7 @@
 {
   "name": "viki-blog",
   "version": "1.0.0",
-  "description": "个人博客",
+  "description": "个人博客 - 测试修改 3",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
