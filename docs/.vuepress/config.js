@@ -22,6 +22,5 @@ module.exports = {
     repo: 'acsweets/viki',
     repoLabel: 'GitHub',
     editLinks: false
-  },
-  plugins: []
+  }
 }
