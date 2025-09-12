@@ -322,12 +322,15 @@ body, html
   justify-content: flex-start
 
 .tag
-  background: rgba(255,255,255,0.15)
-  color: white
-  padding: 0.4rem 0.8rem
-  border-radius: 12px
-  font-size: 0.85rem
+  background: rgba(255,255,255,0.15) !important
+  color: white !important
+  padding: 0.4rem 0.8rem !important
+  border-radius: 12px !important
+  font-size: 0.85rem !important
   backdrop-filter: blur(10px)
+  border: 1px solid rgba(255,255,255,0.2) !important
+  display: inline-block !important
+  white-space: nowrap !important
 
 .skills-section h3,
 .advantages-section h3,
@@ -342,23 +345,39 @@ body, html
   gap: 0.6rem
 
 .skill-item
-  display: flex
-  align-items: center
-  gap: 0.6rem
-  background: rgba(255,255,255,0.08)
-  padding: 0.6rem
-  border-radius: 8px
+  display: flex !important
+  align-items: center !important
+  gap: 0.6rem !important
+  background: rgba(255,255,255,0.08) !important
+  padding: 0.6rem !important
+  border-radius: 8px !important
+  min-height: 40px !important
 
 .skill-icon
-  font-size: 1.2rem
+  font-size: 1.2rem !important
+  flex-shrink: 0 !important
+  width: 20px !important
+  text-align: center !important
+
+.skill-info
+  display: flex !important
+  flex-direction: column !important
+  flex: 1 !important
+  min-width: 0 !important
 
 .skill-name
-  font-size: 0.8rem
-  font-weight: 500
+  font-size: 0.8rem !important
+  font-weight: 500 !important
+  color: white !important
+  margin: 0 !important
+  line-height: 1.2 !important
 
 .skill-level
-  font-size: 0.7rem
-  opacity: 0.7
+  font-size: 0.7rem !important
+  opacity: 0.7 !important
+  color: rgba(255,255,255,0.7) !important
+  margin: 0 !important
+  line-height: 1.2 !important
 
 .advantages-grid
   display: grid
@@ -366,18 +385,25 @@ body, html
   gap: 0.6rem
 
 .advantage-card
-  display: flex
-  align-items: center
-  gap: 0.6rem
-  background: rgba(108, 92, 231, 0.15)
-  padding: 0.6rem
-  border-radius: 8px
+  display: flex !important
+  align-items: center !important
+  gap: 0.6rem !important
+  background: rgba(108, 92, 231, 0.15) !important
+  padding: 0.6rem !important
+  border-radius: 8px !important
+  min-height: 35px !important
 
 .advantage-icon
-  font-size: 1rem
+  font-size: 1rem !important
+  flex-shrink: 0 !important
+  width: 16px !important
+  text-align: center !important
 
 .advantage-text
-  font-size: 0.8rem
+  font-size: 0.8rem !important
+  color: white !important
+  flex: 1 !important
+  margin: 0 !important
 
 .timeline
   display: flex
@@ -385,31 +411,38 @@ body, html
   align-items: center
 
 .timeline-item
-  display: flex
-  flex-direction: column
-  align-items: center
-  gap: 0.3rem
-  flex: 1
+  display: flex !important
+  flex-direction: column !important
+  align-items: center !important
+  gap: 0.3rem !important
+  flex: 1 !important
+  min-width: 60px !important
 
 .timeline-year
-  font-size: 0.7rem
-  font-weight: 600
-  color: #a29bfe
+  font-size: 0.7rem !important
+  font-weight: 600 !important
+  color: #a29bfe !important
+  margin: 0 !important
+  white-space: nowrap !important
 
 .timeline-node
-  width: 8px
-  height: 8px
-  border-radius: 50%
-  background: rgba(255,255,255,0.3)
+  width: 8px !important
+  height: 8px !important
+  border-radius: 50% !important
+  background: rgba(255,255,255,0.3) !important
+  flex-shrink: 0 !important
   
   &.active
-    background: #a29bfe
-    box-shadow: 0 0 8px rgba(162, 155, 254, 0.5)
+    background: #a29bfe !important
+    box-shadow: 0 0 8px rgba(162, 155, 254, 0.5) !important
 
 .timeline-desc
-  font-size: 0.65rem
-  opacity: 0.8
-  text-align: center
+  font-size: 0.65rem !important
+  opacity: 0.8 !important
+  text-align: center !important
+  color: rgba(255,255,255,0.8) !important
+  margin: 0 !important
+  line-height: 1.2 !important
 
 .actions-section
   display: flex
