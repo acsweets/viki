@@ -1,7 +1,7 @@
 module.exports = {
   title: '星星 · 小宇宙',
   description: '记录我的再学习旅程、探索欲与创造力的星系笔记',
-  base: '/viki/',
+  base: '/',
   head: [
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],

@@ -13,7 +13,7 @@
 
 // 全局字体
 body
-  font-family: 'Noto Serif SC', 'Quicksand', serif
+  font-family: 'Noto Serif SC', 'Quicksand', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif
   background-color: var(--bg-color)
   color: var(--text-primary)
 
@@ -249,6 +249,14 @@ body, html
   object-fit: cover
   animation: float 3s ease-in-out infinite
 
+.avatar-fallback
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  font-size: 4rem
+  animation: float 3s ease-in-out infinite
+
 @keyframes float
   0%, 100%
     transform: translate(-50%, -50%) translateY(0px)
@@ -326,7 +334,7 @@ body, html
 .timeline-section h3
   font-size: 1.1rem
   margin: 0 0 0.8rem 0
-  font-family: 'Quicksand', sans-serif
+  font-family: 'Quicksand', 'Microsoft YaHei', '微软雅黑', sans-serif
 
 .skills-grid
   display: grid
@@ -442,7 +450,7 @@ body, html
 .hero-name-left
   font-size: 2.2rem
   font-weight: 700
-  font-family: 'Quicksand', sans-serif
+  font-family: 'Quicksand', 'Microsoft YaHei', '微软雅黑', sans-serif
   background: linear-gradient(45deg, #fff, #a29bfe)
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
