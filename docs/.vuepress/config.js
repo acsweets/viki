@@ -24,8 +24,5 @@ module.exports = {
     repoLabel: 'GitHub',
     editLinks: false
   },
-  plugins: [
-    '@vuepress/back-to-top',
-    '@vuepress/medium-zoom'
-  ]
+  plugins: []
 }
