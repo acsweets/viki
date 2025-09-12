@@ -19,7 +19,6 @@ module.exports = {
     ],
     sidebar: false,
     lastUpdated: '最后更新',
-    smoothScroll: true,
     repo: 'acsweets/viki',
     repoLabel: 'GitHub',
     editLinks: false
