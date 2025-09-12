@@ -113,6 +113,13 @@ body, html
 .page, .theme-container
   background: transparent !important
 
+// 强制覆盖标签样式
+span.tag,
+.tag
+  background-color: rgba(108, 92, 231, 0.25) !important
+  color: #ffffff !important
+  border: 1px solid rgba(108, 92, 231, 0.4) !important
+
 // 文章列表页面样式
 .page
   .content__default
@@ -321,16 +328,19 @@ body, html
   margin-bottom: 1rem
   justify-content: flex-start
 
-.tag
-  background: rgba(255,255,255,0.15) !important
+.tags-section .tag,
+.homepage .tag,
+.hero-left .tag
+  background: rgba(108, 92, 231, 0.2) !important
   color: white !important
   padding: 0.4rem 0.8rem !important
   border-radius: 12px !important
   font-size: 0.85rem !important
-  backdrop-filter: blur(10px)
-  border: 1px solid rgba(255,255,255,0.2) !important
+  backdrop-filter: blur(10px) !important
+  border: 1px solid rgba(108, 92, 231, 0.3) !important
   display: inline-block !important
   white-space: nowrap !important
+  box-shadow: 0 2px 8px rgba(108, 92, 231, 0.2) !important
 
 .skills-section h3,
 .advantages-section h3,
