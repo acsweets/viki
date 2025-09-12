@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Flutter 开发入门指南 | 星星 · 小宇宙</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;family=Noto+Serif+SC:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <meta name="description" content="记录我的再学习旅程、探索欲与创造力的星系笔记">
+    
+    <link rel="preload" href="/viki/assets/css/0.styles.2f97d50a.css" as="style"><link rel="preload" href="/viki/assets/js/app.6bc057b3.js" as="script"><link rel="preload" href="/viki/assets/js/2.f5b2639d.js" as="script"><link rel="preload" href="/viki/assets/js/1.21de6862.js" as="script"><link rel="preload" href="/viki/assets/js/27.5c1d3156.js" as="script"><link rel="prefetch" href="/viki/assets/js/10.f80d3cff.js"><link rel="prefetch" href="/viki/assets/js/11.70ce96a9.js"><link rel="prefetch" href="/viki/assets/js/12.e33b3fc1.js"><link rel="prefetch" href="/viki/assets/js/13.929c8053.js"><link rel="prefetch" href="/viki/assets/js/14.2fa86101.js"><link rel="prefetch" href="/viki/assets/js/15.f4a73f35.js"><link rel="prefetch" href="/viki/assets/js/16.ecb0fe58.js"><link rel="prefetch" href="/viki/assets/js/17.4ae81fed.js"><link rel="prefetch" href="/viki/assets/js/18.1198418d.js"><link rel="prefetch" href="/viki/assets/js/19.9efc8374.js"><link rel="prefetch" href="/viki/assets/js/20.0db8809a.js"><link rel="prefetch" href="/viki/assets/js/21.c7fc3b28.js"><link rel="prefetch" href="/viki/assets/js/22.1ba21a9d.js"><link rel="prefetch" href="/viki/assets/js/23.6636815f.js"><link rel="prefetch" href="/viki/assets/js/24.be2be42e.js"><link rel="prefetch" href="/viki/assets/js/25.2ce88542.js"><link rel="prefetch" href="/viki/assets/js/26.fc996b9b.js"><link rel="prefetch" href="/viki/assets/js/28.a391574e.js"><link rel="prefetch" href="/viki/assets/js/3.a5bdcc19.js"><link rel="prefetch" href="/viki/assets/js/4.7a52ef1d.js"><link rel="prefetch" href="/viki/assets/js/5.88e95db9.js"><link rel="prefetch" href="/viki/assets/js/6.dddcd48e.js"><link rel="prefetch" href="/viki/assets/js/7.4ce380c5.js"><link rel="prefetch" href="/viki/assets/js/vendors~docsearch.934ed2fb.js">
+    <link rel="stylesheet" href="/viki/assets/css/0.styles.2f97d50a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/viki/" class="home-link router-link-active"><!----> <span class="site-name">星星 · 小宇宙</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/viki/" class="nav-link">
+  🏠 首页
+</a></div><div class="nav-item"><a href="/viki/posts/" class="nav-link router-link-active">
+  📚 文章列表
+</a></div><div class="nav-item"><a href="/viki/ritual/" class="nav-link">
+  🌱 成长仪式
+</a></div><div class="nav-item"><a href="/viki/wow/" class="nav-link">
+  ✨ 哇因子
+</a></div><div class="nav-item"><a href="/viki/tech-cards/" class="nav-link">
+  🎯 技术卡片
+</a></div><div class="nav-item"><a href="/viki/lab/" class="nav-link">
+  🧪 内驱力实验室
+</a></div><div class="nav-item"><a href="/viki/about/" class="nav-link">
+  👋 关于我
+</a></div> <a href="https://github.com/acsweets/viki" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/viki/" class="nav-link">
+  🏠 首页
+</a></div><div class="nav-item"><a href="/viki/posts/" class="nav-link router-link-active">
+  📚 文章列表
+</a></div><div class="nav-item"><a href="/viki/ritual/" class="nav-link">
+  🌱 成长仪式
+</a></div><div class="nav-item"><a href="/viki/wow/" class="nav-link">
+  ✨ 哇因子
+</a></div><div class="nav-item"><a href="/viki/tech-cards/" class="nav-link">
+  🎯 技术卡片
+</a></div><div class="nav-item"><a href="/viki/lab/" class="nav-link">
+  🧪 内驱力实验室
+</a></div><div class="nav-item"><a href="/viki/about/" class="nav-link">
+  👋 关于我
+</a></div> <a href="https://github.com/acsweets/viki" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="flutter-开发入门指南"><a href="#flutter-开发入门指南" class="header-anchor">#</a> Flutter 开发入门指南</h1> <h2 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h2> <p>Flutter 是 Google 开发的跨平台 UI 工具包，可以从单一代码库构建美观、原生的移动、Web 和桌面应用。本文将分享 Flutter 开发的核心概念和实用技巧。</p> <h2 id="📚-核心概念"><a href="#📚-核心概念" class="header-anchor">#</a> 📚 核心概念</h2> <h3 id="_1-widget-组件化"><a href="#_1-widget-组件化" class="header-anchor">#</a> 1. Widget 组件化</h3> <p>Flutter 中一切都是 Widget，包括布局、样式、交互等。</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">MyWidget</span> <span class="token keyword">extends</span> <span class="token class-name">StatelessWidget</span> <span class="token punctuation">{</span>
+  <span class="token metadata function">@override</span>
+  <span class="token class-name">Widget</span> <span class="token function">build</span><span class="token punctuation">(</span><span class="token class-name">BuildContext</span> context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token class-name">Container</span><span class="token punctuation">(</span>
+      child<span class="token punctuation">:</span> <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">'你好，Flutter！'</span></span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_2-状态管理"><a href="#_2-状态管理" class="header-anchor">#</a> 2. 状态管理</h3> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">CounterWidget</span> <span class="token keyword">extends</span> <span class="token class-name">StatefulWidget</span> <span class="token punctuation">{</span>
+  <span class="token metadata function">@override</span>
+  _CounterWidgetState <span class="token function">createState</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">_CounterWidgetState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> _CounterWidgetState <span class="token keyword">extends</span> <span class="token class-name">State</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">CounterWidget</span><span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>
+  int _counter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">void</span> <span class="token function">_incrementCounter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      _counter<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token metadata function">@override</span>
+  <span class="token class-name">Widget</span> <span class="token function">build</span><span class="token punctuation">(</span><span class="token class-name">BuildContext</span> context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token class-name">Column</span><span class="token punctuation">(</span>
+      children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">'点击次数: </span><span class="token interpolation"><span class="token punctuation">$</span><span class="token expression">_counter</span></span><span class="token string">'</span></span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token class-name">ElevatedButton</span><span class="token punctuation">(</span>
+          onPressed<span class="token punctuation">:</span> _incrementCounter<span class="token punctuation">,</span>
+          child<span class="token punctuation">:</span> <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">'点击'</span></span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-布局系统"><a href="#_3-布局系统" class="header-anchor">#</a> 3. 布局系统</h3> <ul><li><strong>Column/Row</strong>: 垂直/水平排列</li> <li><strong>Stack</strong>: 堆叠布局</li> <li><strong>Container</strong>: 容器组件，支持内边距、外边距、装饰等</li> <li><strong>Expanded/Flexible</strong>: 弹性布局</li></ul> <h2 id="📚-学习资源"><a href="#📚-学习资源" class="header-anchor">#</a> 📚 学习资源</h2> <ol><li><a href="https://flutter.dev/docs" target="_blank" rel="noopener noreferrer">Flutter 官方文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://flutter.cn/" target="_blank" rel="noopener noreferrer">Flutter 中文网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://dart.dev/guides" target="_blank" rel="noopener noreferrer">Dart 语言指南<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://book.flutterchina.club/" target="_blank" rel="noopener noreferrer">Flutter 实战教程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ol> <h2 id="🚀-实用技巧"><a href="#🚀-实用技巧" class="header-anchor">#</a> 🚀 实用技巧</h2> <h3 id="热重载-hot-reload"><a href="#热重载-hot-reload" class="header-anchor">#</a> 热重载 (Hot Reload)</h3> <p>Flutter 的热重载功能让开发效率大大提升，修改代码后几秒内即可看到效果。</p> <h3 id="widget-inspector"><a href="#widget-inspector" class="header-anchor">#</a> Widget Inspector</h3> <p>使用 Flutter Inspector 可以直观地查看 Widget 树结构，调试布局问题。</p> <h3 id="性能优化"><a href="#性能优化" class="header-anchor">#</a> 性能优化</h3> <ul><li>使用 <code>const</code> 构造函数减少不必要的重建</li> <li>合理使用 <code>setState()</code> 避免过度重绘</li> <li>使用 <code>ListView.builder</code> 处理大量数据</li></ul> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>Flutter 以其强大的跨平台能力和优秀的性能表现，正在成为移动开发的热门选择。通过 Widget 组件化的开发方式，我们可以构建出美观、高性能的应用。</p> <hr> <p><em>下一篇文章将深入探讨 Flutter 的状态管理方案。</em></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">9/11/2025, 5:50:10 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/viki/assets/js/app.6bc057b3.js" defer></script><script src="/viki/assets/js/2.f5b2639d.js" defer></script><script src="/viki/assets/js/1.21de6862.js" defer></script><script src="/viki/assets/js/27.5c1d3156.js" defer></script>
+  </body>
+</html>

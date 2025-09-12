@@ -21,7 +21,7 @@ footer: MIT Licensed | Copyright © 2024 星星
 <div class="avatar-area">
 <div class="status-section">
 <div class="status-badge" data-action="toggle">今日状态：探索中 🚀</div>
-<div class="status-options" id="statusOptions">
+<div class="status-options" id="statusOptions" style="display: none;">
 <div class="status-option" data-status="探索中 🚀">探索中 🚀</div>
 <div class="status-option" data-status="学习中 📚">学习中 📚</div>
 <div class="status-option" data-status="创作中 ✨">创作中 ✨</div>
@@ -155,44 +155,3 @@ MIT Licensed | Copyright © 2024 星星
 </section>
 </div>
 
-<script>
-setTimeout(function() {
-  // 加载保存的状态
-  const savedStatus = localStorage.getItem('userStatus');
-  if (savedStatus) {
-    const badge = document.querySelector('.status-badge');
-    if (badge) {
-      badge.textContent = '今日状态：' + savedStatus;
-    }
-  }
-  
-  document.addEventListener('click', function(e) {
-    if (e.target.dataset.action === 'toggle') {
-      const options = document.getElementById('statusOptions');
-      if (options) {
-        options.classList.toggle('show');
-      }
-    }
-    
-    if (e.target.dataset.status) {
-      const badge = document.querySelector('.status-badge');
-      if (badge) {
-        badge.textContent = '今日状态：' + e.target.dataset.status;
-        // 保存状态到localStorage
-        localStorage.setItem('userStatus', e.target.dataset.status);
-      }
-      const options = document.getElementById('statusOptions');
-      if (options) {
-        options.classList.remove('show');
-      }
-    }
-    
-    if (!e.target.closest('.status-section')) {
-      const options = document.getElementById('statusOptions');
-      if (options) {
-        options.classList.remove('show');
-      }
-    }
-  });
-}, 1000);
-</script>
