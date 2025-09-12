@@ -11,7 +11,7 @@ footer: MIT Licensed | Copyright © 2024 星星
 <div class="avatar-name-section">
 <div class="avatar-wrapper">
 <div class="avatar-bg"></div>
-<img src="/images/avatar.jpg" alt="星星的头像" class="avatar-icon" />
+<img src="/viki/images/avatar.jpg" alt="星星的头像" class="avatar-icon" />
 </div>
 <div class="name-motto-section">
 <div class="hero-name-left">星星</div>
