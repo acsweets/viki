@@ -156,43 +156,44 @@ MIT Licensed | Copyright © 2024 星星
 </div>
 
 <script>
-setTimeout(function() {
-  // 加载保存的状态
-  const savedStatus = localStorage.getItem('userStatus');
-  if (savedStatus) {
-    const badge = document.querySelector('.status-badge');
-    if (badge) {
-      badge.textContent = '今日状态：' + savedStatus;
-    }
-  }
-  
-  document.addEventListener('click', function(e) {
-    if (e.target.dataset.action === 'toggle') {
-      const options = document.getElementById('statusOptions');
-      if (options) {
-        options.classList.toggle('show');
-      }
-    }
-    
-    if (e.target.dataset.status) {
+if (typeof window !== 'undefined') {
+  setTimeout(function() {
+    // 加载保存的状态
+    const savedStatus = localStorage.getItem('userStatus');
+    if (savedStatus) {
       const badge = document.querySelector('.status-badge');
       if (badge) {
-        badge.textContent = '今日状态：' + e.target.dataset.status;
-        // 保存状态到localStorage
-        localStorage.setItem('userStatus', e.target.dataset.status);
-      }
-      const options = document.getElementById('statusOptions');
-      if (options) {
-        options.classList.remove('show');
+        badge.textContent = '今日状态：' + savedStatus;
       }
     }
     
-    if (!e.target.closest('.status-section')) {
-      const options = document.getElementById('statusOptions');
-      if (options) {
-        options.classList.remove('show');
+    document.addEventListener('click', function(e) {
+      if (e.target.dataset.action === 'toggle') {
+        const options = document.getElementById('statusOptions');
+        if (options) {
+          options.classList.toggle('show');
+        }
       }
-    }
-  });
-}, 1000);
+      
+      if (e.target.dataset.status) {
+        const badge = document.querySelector('.status-badge');
+        if (badge) {
+          badge.textContent = '今日状态：' + e.target.dataset.status;
+          localStorage.setItem('userStatus', e.target.dataset.status);
+        }
+        const options = document.getElementById('statusOptions');
+        if (options) {
+          options.classList.remove('show');
+        }
+      }
+      
+      if (!e.target.closest('.status-section')) {
+        const options = document.getElementById('statusOptions');
+        if (options) {
+          options.classList.remove('show');
+        }
+      }
+    });
+  }, 1000);
+}
 </script>
