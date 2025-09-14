@@ -203,10 +203,6 @@ A: 检查 `base` 配置是否与仓库名匹配
 - 遵循 Vue.js 风格指南
 - 编写清晰的提交信息
 
-## 📄 许可证
-
-MIT License - 详见 [LICENSE](LICENSE) 文件
-
 ## 📞 联系方式
 
 - **邮箱**：jurelxc@163.com
@@ -215,4 +211,12 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 
 ---
 
+<div align="center">
+
+## 📄 许可证
+
+MIT License - 详见 [LICENSE](LICENSE) 文件
+
 *"代码是写给人看的，只是顺便让机器执行"*
+
+</div>

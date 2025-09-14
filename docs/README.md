@@ -1,5 +1,5 @@
 ---
-footer: MIT Licensed | Copyright © 2024 星星
+footer: "<div style='text-align: right; padding-right: 30px; color: white;'>MIT Licensed | Copyright © 2024 星星</div>"
 ---
 
 <div class="homepage">
@@ -147,11 +147,12 @@ footer: MIT Licensed | Copyright © 2024 星星
 
 </div>
 
-<div class="footer-content">
-MIT Licensed | Copyright © 2024 星星
-</div>
+
 </div>
 </div>
 </section>
 </div>
 
+<div style="position: fixed; bottom: 10px; right: 20px; color: white; font-size: 12px; z-index: 1000;">
+MIT Licensed | Copyright © 2024 星星
+</div>

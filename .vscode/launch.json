@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "启动博客开发服务器",
+      "name": "启动博客开发服务器 (Windows)",
       "type": "node",
       "request": "launch",
       "program": "${workspaceFolder}\\node_modules\\vuepress\\cli.js",
@@ -11,7 +11,29 @@
       "env": {
         "NODE_ENV": "development"
       },
-      "skipFiles": ["<node_internals>/**"]
+      "skipFiles": ["<node_internals>/**"],
+      "windows": {
+        "program": "${workspaceFolder}\\node_modules\\vuepress\\cli.js"
+      }
+    },
+    {
+      "name": "启动博客开发服务器 (macOS)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/vuepress/cli.js",
+      "args": ["dev", "docs"],
+      "console": "integratedTerminal",
+      "env": {
+        "NODE_ENV": "development",
+        "PATH": "/opt/homebrew/bin:${env:PATH}"
+      },
+      "skipFiles": ["<node_internals>/**"],
+      "osx": {
+        "env": {
+          "NODE_ENV": "development",
+          "PATH": "/opt/homebrew/bin:/usr/local/bin:${env:PATH}"
+        }
+      }
     }
   ]
 }
