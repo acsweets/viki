@@ -58,34 +58,54 @@ footer: "<div style='text-align: right; padding-right: 30px; color: white;'>MIT 
 
 
 <div class="skills-section">
-<h3>技术能力</h3>
+<h3>核心技术能力</h3>
 <div class="skills-grid">
 <div class="skill-item">
 <div class="skill-icon">📱</div>
 <div class="skill-info">
-<div class="skill-name">Flutter开发</div>
-<div class="skill-level">专家级</div>
+<div class="skill-name">Flutter 跨平台开发</div>
+<div class="skill-level">⭐⭐⭐⭐ 资深开发</div>
+<div class="skill-desc">移动端/Web/Pad/车机全平台覆盖</div>
 </div>
 </div>
 <div class="skill-item">
-<div class="skill-icon">🔧</div>
+<div class="skill-icon">🤖</div>
 <div class="skill-info">
-<div class="skill-name">跨端适配</div>
-<div class="skill-level">熟练</div>
+<div class="skill-name">Android 原生开发</div>
+<div class="skill-level">⭐⭐⭐⭐ 精通</div>
+<div class="skill-desc">Java/插件开发/系统级功能</div>
 </div>
 </div>
 <div class="skill-item">
-<div class="skill-icon">🎬</div>
+<div class="skill-icon">🍎</div>
 <div class="skill-info">
-<div class="skill-name">视频播放器</div>
-<div class="skill-level">专业</div>
+<div class="skill-name">iOS 开发</div>
+<div class="skill-level">⭐⭐⭐ 熟练</div>
+<div class="skill-desc">Xcode/证书配置/App Store</div>
 </div>
 </div>
 <div class="skill-item">
-<div class="skill-icon">✨</div>
+<div class="skill-icon">🌐</div>
 <div class="skill-info">
-<div class="skill-name">UI动画</div>
-<div class="skill-level">熟练</div>
+<div class="skill-name">前端技术</div>
+<div class="skill-level">⭐⭐⭐⭐ 精通</div>
+<div class="skill-desc">Web/JSBridge/动态表单</div>
+</div>
+</div>
+<div class="skill-item">
+<div class="skill-icon">🏗️</div>
+<div class="skill-info">
+<div class="skill-name">架构设计</div>
+<div class="skill-level">⭐⭐⭐⭐ 精通</div>
+<div class="skill-desc">状态管理/组件封装/性能优化</div>
+</div>
+</div>
+<div class="skill-item">
+<div class="skill-icon">💾</div>
+<div class="skill-info">
+<div class="skill-name">数据存储</div>
+<div class="skill-level">⭐⭐⭐⭐ 精通</div>
+<div class="skill-desc">SQLite/网络通信/实时数据</div>
 </div>
 </div>
 </div>
@@ -117,33 +137,34 @@ footer: "<div style='text-align: right; padding-right: 30px; color: white;'>MIT 
 <h3>成长履历</h3>
 <div class="timeline">
 <div class="timeline-item">
-<div class="timeline-year">2020</div>
+<div class="timeline-year">2017</div>
 <div class="timeline-node"></div>
-<div class="timeline-desc">开始Flutter开发</div>
+<div class="timeline-desc">技术基础</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-year">2019</div>
+<div class="timeline-node"></div>
+<div class="timeline-desc">实战经验</div>
 </div>
 <div class="timeline-item">
 <div class="timeline-year">2022</div>
 <div class="timeline-node"></div>
-<div class="timeline-desc">跨端项目经验</div>
+<div class="timeline-desc">Flutter资深</div>
 </div>
 <div class="timeline-item">
 <div class="timeline-year">2023</div>
 <div class="timeline-node"></div>
-<div class="timeline-desc">插件开发专家</div>
+<div class="timeline-desc">架构师</div>
 </div>
 <div class="timeline-item">
 <div class="timeline-year">2024</div>
 <div class="timeline-node active"></div>
-<div class="timeline-desc">内驱力探索</div>
+<div class="timeline-desc">技术创新</div>
 </div>
 </div>
 </div>
 
-<div class="actions-section">
-<a href="/posts/" class="action-btn primary">📚 技术文章</a>
-<a href="/ritual/" class="action-btn secondary">🌱 成长仪式</a>
-<a href="/wow/" class="action-btn secondary">✨ 哇因子</a>
-</div>
+
 
 </div>
 

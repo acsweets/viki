@@ -107,11 +107,41 @@ body .footer
 
 // 确保整个页面背景一致
 body, html
-  background: linear-gradient(135deg, #1a1c29 0%, #2d1b69 50%, #11998e 100%)
-  min-height: 100vh
+  background: linear-gradient(135deg, #1a1c29 0%, #2d1b69 50%, #11998e 100%) !important
+  min-height: 100vh !important
 
 .page, .theme-container
   background: transparent !important
+
+// 最强的全局背景覆盖
+* 
+  &:not(.avatar-icon):not(.skill-icon):not(.advantage-icon):not(.timeline-node)
+    background-color: transparent !important
+    
+// 针对标签区域的特殊处理
+.homepage .tags-section *,
+.hero-left .tags-section *
+  background: transparent !important
+  background-color: transparent !important
+
+// 强制覆盖所有可能的白色背景
+.content__default,
+.content,
+.page-content,
+.theme-default-content,
+.homepage *,
+.homepage div,
+.homepage section,
+.hero-left div,
+.hero-right div,
+.tags-section,
+.personal-intro,
+.avatar-area,
+.skills-section,
+.advantages-section,
+.timeline-section
+  background: transparent !important
+  background-color: transparent !important
 
 // 强制覆盖标签样式 - 确保生产环境透明背景
 span.tag,
@@ -341,6 +371,18 @@ span.tag,
   flex-wrap: wrap
   margin-bottom: 1rem
   justify-content: flex-start
+  background: transparent !important
+  background-color: transparent !important
+  
+// 强制覆盖标签容器的所有可能背景
+.tags-section,
+.homepage .tags-section,
+.hero-left .tags-section
+  background: transparent !important
+  background-color: transparent !important
+  padding: 0 !important
+  border: none !important
+  box-shadow: none !important
 
 // 标签样式已在上面统一定义
 
@@ -354,42 +396,58 @@ span.tag,
 .skills-grid
   display: grid
   grid-template-columns: 1fr 1fr
-  gap: 0.6rem
+  gap: 0.8rem
 
 .skill-item
   display: flex !important
-  align-items: center !important
-  gap: 0.6rem !important
+  align-items: flex-start !important
+  gap: 0.8rem !important
   background: rgba(255,255,255,0.08) !important
-  padding: 0.6rem !important
-  border-radius: 8px !important
-  min-height: 40px !important
+  padding: 1rem !important
+  border-radius: 12px !important
+  min-height: 80px !important
+  backdrop-filter: blur(10px) !important
+  border: 1px solid rgba(255,255,255,0.1) !important
+  transition: all 0.3s ease !important
+  
+  &:hover
+    background: rgba(255,255,255,0.12) !important
+    transform: translateY(-2px) !important
 
 .skill-icon
-  font-size: 1.2rem !important
+  font-size: 1.5rem !important
   flex-shrink: 0 !important
-  width: 20px !important
+  width: 24px !important
   text-align: center !important
+  margin-top: 2px !important
 
 .skill-info
   display: flex !important
   flex-direction: column !important
   flex: 1 !important
   min-width: 0 !important
+  gap: 0.3rem !important
 
 .skill-name
-  font-size: 0.8rem !important
-  font-weight: 500 !important
+  font-size: 0.85rem !important
+  font-weight: 600 !important
   color: white !important
   margin: 0 !important
-  line-height: 1.2 !important
+  line-height: 1.3 !important
 
 .skill-level
-  font-size: 0.7rem !important
-  opacity: 0.7 !important
-  color: rgba(255,255,255,0.7) !important
+  font-size: 0.75rem !important
+  color: #A29BFE !important
   margin: 0 !important
   line-height: 1.2 !important
+  font-weight: 500 !important
+
+.skill-desc
+  font-size: 0.7rem !important
+  opacity: 0.8 !important
+  color: rgba(255,255,255,0.8) !important
+  margin: 0 !important
+  line-height: 1.3 !important
 
 .advantages-grid
   display: grid
@@ -401,6 +459,139 @@ span.tag,
   align-items: center !important
   gap: 0.6rem !important
   background: rgba(108, 92, 231, 0.15) !important
+  padding: 0.6rem !important
+  border-radius: 8px !important
+  min-height: 35px !important
+
+.advantage-icon
+  font-size: 1rem !important
+  flex-shrink: 0 !important
+  width: 16px !important
+  text-align: center !important
+
+.advantage-text
+  font-size: 0.8rem !important
+  color: white !important
+  flex: 1 !important
+  margin: 0 !important
+
+// 关于我页面样式
+.about-page
+  max-width: 800px
+  margin: 0 auto
+  padding: 2rem
+  color: white
+  
+  h1, h2, h3, h4
+    color: white !important
+    
+  .quote-section
+    text-align: center
+    margin: 2rem 0
+    
+    blockquote
+      background: rgba(108, 92, 231, 0.15)
+      border-left: 4px solid #A29BFE
+      padding: 1.5rem
+      border-radius: 12px
+      font-style: italic
+      color: rgba(255,255,255,0.9)
+      
+  .intro-card
+    background: rgba(255,255,255,0.08)
+    padding: 1.5rem
+    border-radius: 12px
+    margin: 1.5rem 0
+    backdrop-filter: blur(10px)
+    
+  .tech-story
+    background: rgba(108, 92, 231, 0.1)
+    padding: 1rem
+    border-radius: 8px
+    margin: 1rem 0
+    
+  .current-skills
+    display: flex
+    flex-direction: column
+    gap: 0.8rem
+    margin: 1rem 0
+    
+  .skill-highlight
+    display: flex
+    align-items: center
+    gap: 1rem
+    background: rgba(255,255,255,0.05)
+    padding: 0.8rem
+    border-radius: 8px
+    
+  .skill-badge
+    background: rgba(108, 92, 231, 0.3)
+    color: white
+    padding: 0.3rem 0.8rem
+    border-radius: 15px
+    font-size: 0.8rem
+    font-weight: 600
+    min-width: 100px
+    text-align: center
+    
+  .skill-desc
+    color: rgba(255,255,255,0.9)
+    font-size: 0.9rem
+
+// 技术卡片页面样式
+.page
+  .content__default
+    max-width: 900px
+    margin: 0 auto
+    padding: 2rem
+    
+    // 技术卡片样式
+    h3
+      background: rgba(108, 92, 231, 0.15)
+      padding: 0.8rem 1.2rem
+      border-radius: 8px
+      border-left: 4px solid #A29BFE
+      margin: 2rem 0 1rem 0
+      
+    // 技能等级样式
+    strong
+      color: #A29BFE
+      
+    // 代码块样式
+    code
+      background: rgba(108, 92, 231, 0.2)
+      color: #A29BFE
+      padding: 0.2rem 0.4rem
+      border-radius: 4px
+      
+    // 分隔线样式
+    hr
+      border: none
+      height: 2px
+      background: linear-gradient(90deg, transparent, rgba(108, 92, 231, 0.3), transparent)
+      margin: 2rem 0
+      
+    // 列表样式优化
+    ul, ol
+      li
+        margin: 0.5rem 0
+        
+        strong
+          color: #A29BFE
+          
+    // 项目卡片样式
+    h4
+      color: #A29BFE
+      margin: 1.5rem 0 0.8rem 0
+      
+    // 引用样式
+    blockquote
+      background: rgba(108, 92, 231, 0.1)
+      border-left: 4px solid #A29BFE
+      padding: 1rem
+      margin: 1rem 0
+      border-radius: 8px
+      font-style: italictant
   padding: 0.6rem !important
   border-radius: 8px !important
   min-height: 35px !important

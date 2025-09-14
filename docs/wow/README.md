@@ -240,8 +240,9 @@
 
 .filter-btn {
   padding: 0.5rem 1rem;
-  border: 2px solid #E9ECEF;
-  background: white;
+  border: 2px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
+  color: white;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -268,11 +269,17 @@
 
 .search-input {
   padding: 0.75rem 2.5rem 0.75rem 1rem;
-  border: 2px solid #E9ECEF;
+  border: 2px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
+  color: white;
   border-radius: 25px;
   outline: none;
   transition: all 0.3s ease;
   min-width: 200px;
+}
+
+.search-input::placeholder {
+  color: rgba(255,255,255,0.7);
 }
 
 .search-input:focus {

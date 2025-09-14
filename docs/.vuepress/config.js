@@ -11,10 +11,8 @@ module.exports = {
     nav: [
       { text: '🏠 首页', link: '/' },
       { text: '📚 文章列表', link: '/posts/' },
-      { text: '🌱 成长仪式', link: '/ritual/' },
       { text: '✨ 哇因子', link: '/wow/' },
       { text: '🎯 技术卡片', link: '/tech-cards/' },
-      { text: '🧪 内驱力实验室', link: '/lab/' },
       { text: '👋 关于我', link: '/about/' }
     ],
     sidebar: false,
