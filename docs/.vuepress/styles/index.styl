@@ -60,6 +60,53 @@ body
 .navbar .dropdown-wrapper
   background: transparent !important
 
+// 移动端导航抽屉背景修复
+@media (max-width: 719px)
+  .theme-default-content .navbar .nav-links,
+  .navbar .nav-links,
+  .nav-links
+    background: #000000 !important
+    background-color: #000000 !important
+    
+  .sidebar-mask
+    background: rgba(0, 0, 0, 0.8) !important
+    
+  .sidebar
+    background: #000000 !important
+    background-color: #000000 !important
+    
+  .sidebar .nav-links a,
+  .sidebar a
+    color: white !important
+    background: transparent !important
+    
+  .sidebar-button,
+  .navbar .sidebar-button
+    color: white !important
+    
+  .sidebar-button .icon
+    color: white !important
+    
+  .sidebar .nav-links .nav-item,
+  .sidebar .nav-item
+    border-bottom: none !important
+    border-top: none !important
+    margin: 0 !important
+    padding: 0 !important
+    
+  .sidebar .nav-links
+    border: none !important
+    
+  .sidebar .nav-links .nav-item a,
+  .sidebar .nav-item a
+    background: linear-gradient(135deg, #1a1c29 0%, #2d1b69 50%, #11998e 100%) !important
+    margin: 0.25rem 0 !important
+    border-radius: 8px !important
+    padding: 0.75rem 1rem !important
+    display: block !important
+    width: 100% !important
+    box-sizing: border-box !important
+
 // 卡片样式
 .card
   background: var(--card-bg)
