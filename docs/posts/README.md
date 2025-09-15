@@ -52,9 +52,22 @@
 
 ### 🚀 Flutter 系列
 - Flutter 开发入门指南
+- Flutter 布局知识梳理系列
+- Flutter 与原生通讯
 - 状态管理深入解析（规划中）
 - 插件开发实战（规划中）
 
+### 🤖 Android 系列
+- Jetpack Compose 状态管理
+- Jetpack Compose 导航系列
+- Android 前台服务开发
+- 自定义 UI 组件
+
 ### 🛠 实战项目
-- 多端适配经验分享（规划中）
+- 多端适配经验分享
+- Web 平台开发技巧
 - 性能优化实践（规划中）
+
+### 🎨 设计工具
+- Figma 设计指南
+- 图标字体集成
