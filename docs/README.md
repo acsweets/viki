@@ -20,7 +20,7 @@ footer: "<div style='text-align: right; padding-right: 30px; color: white;'>MIT 
 </div>
 <div class="avatar-area">
 <div class="status-section">
-<div class="status-badge" data-action="toggle">今日状态：探索中 🚀</div>
+<div class="status-badge" data-action="toggle">目前状态：探索中 🚀</div>
 <div class="status-options" id="statusOptions" style="display: none;">
 <div class="status-option" data-status="探索中 🚀">探索中 🚀</div>
 <div class="status-option" data-status="学习中 📚">学习中 📚</div>
@@ -103,17 +103,17 @@ footer: "<div style='text-align: right; padding-right: 30px; color: white;'>MIT 
 <div class="timeline-desc">实战经验</div>
 </div>
 <div class="timeline-item">
-<div class="timeline-year">2022</div>
+<div class="timeline-year">2022-2024</div>
 <div class="timeline-node"></div>
 <div class="timeline-desc">Flutter开发</div>
 </div>
 <div class="timeline-item">
-<div class="timeline-year">2023</div>
+<div class="timeline-year">2024</div>
 <div class="timeline-node"></div>
 <div class="timeline-desc">高级开发</div>
 </div>
 <div class="timeline-item">
-<div class="timeline-year">2024</div>
+<div class="timeline-year">2025</div>
 <div class="timeline-node active"></div>
 <div class="timeline-desc">技术创新</div>
 </div>
@@ -131,5 +131,5 @@ footer: "<div style='text-align: right; padding-right: 30px; color: white;'>MIT 
 </div>
 
 <div style="position: fixed; bottom: 10px; right: 20px; color: white; font-size: 12px; z-index: 1000;">
-MIT Licensed | Copyright © 2024 星星
+MIT Licensed | Copyright © 2025 星星
 </div>
