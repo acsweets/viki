@@ -31,12 +31,9 @@ footer: "<div style='text-align: right; padding-right: 30px; color: white;'>MIT 
 </div>
 </div>
 <div class="personal-intro">
-<p>嗨，我是星星，一名热衷于跨端开发与持续学习的 Flutter 开发者。在探索中成长，在实践中创新。</p>
-<p>我精通 Flutter 框架与生态体系，具备 iOS / Android / Web /macOS/ 车机等多终端开发经验。通过丰富的插件封装与三方库优化实践，能够快速解决业务痛点，提升性能与开发效率。</p>
-<p>在复杂业务场景方面，我主导开发过基于flutter官方插件封装视频播放器、商城与库存系统、车辆流量管理系统等核心模块。在多端适配、组件封装、插件维护开发、安全检测等方面积累了丰富的实战经验。</p>
-<p>技术上，我掌握 Flutter ↔ Web/Vue/JS 通信机制，能够实现跨框架交互与页面复用。熟悉 Android 原生开发、iOS 打包发布、Gradle 构建、混淆与安全加固，具备完整的产品交付能力。</p>
-<p>在工程化实践中，我熟悉 Git 分支管理、FVM 多版本切换、CI/CD 部署等流程。具备较强的产品理解力与用户体验意识，能将技术方案与业务目标紧密结合。</p>
-<p>我持续关注 Flutter 新特性、视频/音频流媒体方案、跨端框架演进，保持快速学习、主动探索和总结沉淀的习惯。除了技术，我也在通过「重拾学习内驱力」项目探索自己的学习内驱力与创造力，乐于分享与知识积累！</p>
+<p>嗨，我是星星，一名热衷于跨端开发与持续学习的 Flutter 开发者。</p>
+<p>我专注于 Flutter 跨平台开发，具备多端适配、组件封装、插件开发的丰富经验。通过技术创新解决业务痛点，提升开发效率。</p>
+<p>除了技术，我也在探索学习内驱力与创造力，相信学习本身就应该是人生至乐。</p>
 </div>
 <div class="tags-section">
 <span class="tag">Flutter开发者</span>
@@ -57,80 +54,39 @@ footer: "<div style='text-align: right; padding-right: 30px; color: white;'>MIT 
 <div class="hero-right">
 
 
-<div class="skills-section">
-<h3>核心技术能力</h3>
-<div class="skills-grid">
-<div class="skill-item">
-<div class="skill-icon">📱</div>
-<div class="skill-info">
-<div class="skill-name">Flutter 跨平台开发</div>
-<div class="skill-level">⭐⭐⭐⭐ 资深开发</div>
-<div class="skill-desc">移动端/Web/Pad/车机全平台覆盖</div>
+<div class="tech-advantages-section">
+<h3>技术能力 & 个人优势</h3>
+<div class="tech-advantages-grid">
+<div class="tech-advantage-item">
+<div class="tech-advantage-icon">📱</div>
+<div class="tech-advantage-content">
+<div class="tech-advantage-title">Flutter 跨平台开发</div>
+<div class="tech-advantage-desc">移动/Web/桌面全端覆盖</div>
 </div>
 </div>
-<div class="skill-item">
-<div class="skill-icon">🤖</div>
-<div class="skill-info">
-<div class="skill-name">Android 原生开发</div>
-<div class="skill-level">⭐⭐⭐⭐ 精通</div>
-<div class="skill-desc">Java/插件开发/系统级功能</div>
+<div class="tech-advantage-item">
+<div class="tech-advantage-icon">🚀</div>
+<div class="tech-advantage-content">
+<div class="tech-advantage-title">资深开发经验</div>
+<div class="tech-advantage-desc">多年实战经验/技术深度</div>
 </div>
 </div>
-<div class="skill-item">
-<div class="skill-icon">🍎</div>
-<div class="skill-info">
-<div class="skill-name">iOS 开发</div>
-<div class="skill-level">⭐⭐⭐ 熟练</div>
-<div class="skill-desc">Xcode/证书配置/App Store</div>
+<div class="tech-advantage-item">
+<div class="tech-advantage-icon">🏗️</div>
+<div class="tech-advantage-content">
+<div class="tech-advantage-title">架构设计思维</div>
+<div class="tech-advantage-desc">组件封装/性能优化</div>
 </div>
 </div>
-<div class="skill-item">
-<div class="skill-icon">🌐</div>
-<div class="skill-info">
-<div class="skill-name">前端技术</div>
-<div class="skill-level">⭐⭐⭐⭐ 精通</div>
-<div class="skill-desc">Web/JSBridge/动态表单</div>
-</div>
-</div>
-<div class="skill-item">
-<div class="skill-icon">🏗️</div>
-<div class="skill-info">
-<div class="skill-name">架构设计</div>
-<div class="skill-level">⭐⭐⭐⭐ 精通</div>
-<div class="skill-desc">状态管理/组件封装/性能优化</div>
-</div>
-</div>
-<div class="skill-item">
-<div class="skill-icon">💾</div>
-<div class="skill-info">
-<div class="skill-name">数据存储</div>
-<div class="skill-level">⭐⭐⭐⭐ 精通</div>
-<div class="skill-desc">SQLite/网络通信/实时数据</div>
+<div class="tech-advantage-item">
+<div class="tech-advantage-icon">💡</div>
+<div class="tech-advantage-content">
+<div class="tech-advantage-title">创新解决方案</div>
+<div class="tech-advantage-desc">技术创新/业务痛点解决</div>
 </div>
 </div>
 </div>
-</div>
-
-<div class="advantages-section">
-<h3>个人优势</h3>
-<div class="advantages-grid">
-<div class="advantage-card">
-<div class="advantage-icon">🚀</div>
-<div class="advantage-text">跨端经验</div>
-</div>
-<div class="advantage-card">
-<div class="advantage-icon">🔬</div>
-<div class="advantage-text">技术深度</div>
-</div>
-<div class="advantage-card">
-<div class="advantage-icon">💡</div>
-<div class="advantage-text">创造力探索</div>
-</div>
-<div class="advantage-card">
-<div class="advantage-icon">📈</div>
-<div class="advantage-text">持续成长</div>
-</div>
-</div>
+<div class="tech-note">查看完整技术栈 → <a href="/viki/tech-cards/">技术卡片集</a></div>
 </div>
 
 <div class="timeline-section">
@@ -149,12 +105,12 @@ footer: "<div style='text-align: right; padding-right: 30px; color: white;'>MIT 
 <div class="timeline-item">
 <div class="timeline-year">2022</div>
 <div class="timeline-node"></div>
-<div class="timeline-desc">Flutter资深</div>
+<div class="timeline-desc">Flutter开发</div>
 </div>
 <div class="timeline-item">
 <div class="timeline-year">2023</div>
 <div class="timeline-node"></div>
-<div class="timeline-desc">架构师</div>
+<div class="timeline-desc">高级开发</div>
 </div>
 <div class="timeline-item">
 <div class="timeline-year">2024</div>
