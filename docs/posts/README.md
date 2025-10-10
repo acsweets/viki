@@ -4,6 +4,7 @@
 
 ## 2025年
 
+- [2025-10-10 如何使用nRF Connect 模拟蓝牙设备，进行基础的蓝牙调试](./2025/2025-10-10-nrf-connect-bluetooth-debugging.md)
 - [2025-07-01 Flutter 布局 小 tips ，IntrinsicHeight 组件](./2025/2025-07-01-Flutter-布局-小-tips-IntrinsicHeight-组件.md)
 - [2025-06-26 插件 stomp_dart_client 简单使用](./2025/2025-06-26-插件-stomp_dart_client-简单使用.md)
 - [2025-06-17 Flutter Navigator 锁定错误](./2025/2025-06-17-Flutter-Navigator-锁定错误.md)

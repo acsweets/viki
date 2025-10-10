@@ -4,6 +4,7 @@
 
 ## 📝 哇因子记录
 
+- [2025-10-10 时间的意义在于留下痕迹](./2025-10-10-time-and-learning.md) - 💭 感悟
 - [2024-01-07 Widget树的俄罗斯套娃之美](./2024-01-07-widget-tree-insight.md) - 🔧 技术 💡 创意
 - [2024-01-06 调试如冥想的宁静时刻](./2024-01-06-debugging-meditation.md) - 🌸 宁静
 
@@ -13,6 +14,26 @@
 
 <div class="wow-cards-grid">
   
+  <div class="wow-card thoughtful" data-date="2025-10-10">
+    <div class="card-header">
+      <div class="card-tags">
+        <span class="tag thoughtful">💭 感悟</span>
+      </div>
+      <div class="card-date">2025-10-10</div>
+    </div>
+    <div class="card-content">
+      <p>"时间白白流过却没有在你的生命中留下任何东西，学习新的东西不仅仅是能够获得新的体验，更能够丰富自己。"</p>
+    </div>
+    <div class="card-footer">
+      <div class="mood-indicator calm">😌</div>
+      <div class="card-actions">
+        <button class="action-btn">💖</button>
+        <button class="action-btn">📝</button>
+        <button class="action-btn">🔗</button>
+      </div>
+    </div>
+  </div>
+
   <div class="wow-card tech creative" data-date="2025-09-12">
     <div class="card-header">
       <div class="card-tags">
@@ -195,6 +216,10 @@
   border-left-color: #FFD93D;
 }
 
+.wow-card.thoughtful {
+  border-left-color: #A29BFE;
+}
+
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -233,6 +258,11 @@
 .tag.surprise {
   background: rgba(255, 217, 61, 0.1);
   color: #E6C200;
+}
+
+.tag.thoughtful {
+  background: rgba(162, 155, 254, 0.1);
+  color: #A29BFE;
 }
 
 .card-date {
